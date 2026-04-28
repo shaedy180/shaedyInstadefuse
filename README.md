@@ -1,13 +1,19 @@
-# shaedy Instadefuse
+# shaedy InstaDefuse
 
-A CounterStrikeSharp plugin that allows instant bomb defuses when it's safe.
+A CounterStrikeSharp plugin that instantly defuses the bomb when all enemies are dead.
 
 ## Features
 
-- Instantly defuses the bomb when all Terrorists are dead
-- Checks for nearby fire and grenades (175 unit radius) before allowing instant defuse
-- Validates that enough time remains on the bomb (5s with kit, 10s without)
-- Shows the remaining time-to-kill in chat when an instant defuse triggers
+- Instant defuse when a CT begins defusing and no enemies are alive
+- Safety checks: blocks if enemies are alive, bomb is in fire, or projectiles are nearby
+- Real-time bomb timer overlay for players near the bomb
+- Defuse status messages (kit check, can defuse info)
+- 175 unit safety radius for fire and projectile detection
+- 400 unit proximity radius for bomb timer display
+
+## Dependencies
+
+- [shaedyHudManager](https://github.com/shaedy180/shaedyHudManager) - Centralized HUD overlay manager (must be installed alongside this plugin)
 
 ## Installation
 
@@ -15,7 +21,7 @@ Drop the plugin folder into your CounterStrikeSharp `plugins` directory.
 
 ## Configuration
 
-No config needed. Safety checks are built in.
+No config needed. Safety radius and proximity radius are hardcoded.
 
 ## Support
 
