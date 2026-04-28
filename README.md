@@ -13,7 +13,7 @@ A CounterStrikeSharp plugin that instantly defuses the bomb when all enemies are
 
 ## Dependencies
 
-- [shaedyHudManager](https://github.com/shaedy180/shaedyHudManager) - Centralized HUD overlay manager (must be installed alongside this plugin)
+- [shaedyHudManager](https://github.com/shaedy180/shaedyHudManager) - Centralized HUD overlay manager (must be installed alongside this plugin, connects via runtime reflection)
 
 ## Installation
 

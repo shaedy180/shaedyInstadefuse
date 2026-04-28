@@ -146,7 +146,7 @@ public class ShaedyInstaDefuse : BasePlugin
         html += defuseLine;
         html += "</div></body></html>";
 
-        HudManager.Show(player.SteamID, html, HudPriority.Critical, 1);
+        HudManagerProxy.Show(player.SteamID, html, HudManagerProxy.Priority.Critical, 1);
     }
 
     private HookResult OnBombBeginDefuse(EventBombBegindefuse @event, GameEventInfo info)
@@ -228,7 +228,7 @@ public class ShaedyInstaDefuse : BasePlugin
     {
         string html = "<html><body style='margin:0;padding:0;'><div style='text-align:center;font-family:Arial;'><div style='font-size:20px;font-weight:bold;color:" + color + ";text-shadow:0 0 10px " + color + ";'>" + message + "</div></div></body></html>";
 
-        HudManager.Show(player.SteamID, html, HudPriority.Critical, 3);
+        HudManagerProxy.Show(player.SteamID, html, HudManagerProxy.Priority.Critical, 3);
         player.PrintToChat(ChatPrefix + " " + ChatColors.White + message);
     }
 
